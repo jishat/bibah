@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Planner</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Playball&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="mainHeader" style="background-image: url('background.png');">
+        <nav class="navbar navbar-expand navbar-light">
+            <div class="container">
+              <a class="navbar-brand" href="#">Wedding</a>
+              <div id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="btn loginBtn dropdown-toggle" type="button" id="loginBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="far fa-user"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="loginBtn">
+                          <li><a class="dropdown-item" href="#">Login</a></li>
+                          <li><a class="dropdown-item" href="#">Register</a></li>
+                        </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="btn regBtn dropdown-toggle" type="button" id="regBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-headset"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="regBtn">
+                          <li><a class="dropdown-item" href="#">Support</a></li>
+                          <li><a class="dropdown-item" href="#">FAQ</a></li>
+                          <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <div class="headerContentMain">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="search col-md-5">
+                        <div class="headerText">
+                            <h2>Find Your <strong>Life Partner</strong> </h2>
+                            <p>Wedding planner help to finding for you who is your best match and maybe your life partner.</p>
+                        </div>
+                        <div class="form-group mb-3">
+                            <select class="form-select" id="selectMan" aria-label="Default select example">
+                                <option selected disabled>I'm looking for a</option>
+                                <option value="1">Woman</option>
+                                <option value="2">Man</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group mb-3">
+                                    <select class="form-select" id="ageFrom" aria-label="Default select example">
+                                        <option selected disabled>Age from</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group mb-3">
+                                    <select class="form-select" id="ageTo" aria-label="Default select example">
+                                        <option selected disabled>To</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group mb-3">
+                                    <select class="form-select" id="religion" aria-label="Default select example">
+                                        <option selected disabled>Religion</option>
+                                        <option value="18">Hindu</option>
+                                        <option value="19">Muslim</option>
+                                        <option value="20">Shik</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group mb-3">
+                                    <select class="form-select" id="district" aria-label="Default select example">
+                                        <option selected disabled>District</option>
+                                        <option value="18">Chattogram</option>
+                                        <option value="19">Dhaka</option>
+                                        <option value="20">Khulna</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <button class="searchSubmitBtn btn">Find Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="headerImg col-md-5 offset-md-2 d-none d-md-block" >
+                        <!-- <img src="header-ig-1.jpg" alt="" class="img-fluid"> -->
+                        <div id="headerImgCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="header-ig-1.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="header-img-2.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="header-img-3.jpg" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /Header -->
+
+    <!-- How it Work -->
+    <section class="howWork">
+        <div class="container">
+            <h2>How it work</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="eachItem">
+                        <span class="eachItemIcon">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <span class="orderList">1</span>
+                        </span>
+                        <h3>Sign Up</h3>
+                        <p>Register for free & make profile 100%</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="eachItem">
+                        <span class="eachItemIcon">
+                            <i class="fas fa-search"></i>
+                            <span class="orderList">2</span>
+                        </span>
+                        
+                        <h3>Search</h3>
+                        <p>Search & Select with Matches you like </p>
+                    </div>                    
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="eachItem">
+                        <span class="eachItemIcon">
+                            <i class="far fa-comments"></i>
+                            <span class="orderList">3</span>
+                        </span>
+                        <h3>Connect</h3>
+                        <p>Become a Premium Member & Start a Conversation </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /How it work -->
+
+    <!-- Total info -->
+    <section class="totalInfoMain">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <div class="infoItem">
+                        <i class="far fa-smile"></i>
+                        <h2>100+</h2>
+                        <p>Happy User</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <div class="infoItem">
+                        <i class="fas fa-headset"></i>
+                        <h2>1200+</h2>
+                        <p>Total Support</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <div class="infoItem">
+                        <i class="fas fa-headset"></i>
+                        <h2>3200+</h2>
+                        <p>Lorem Ipsum</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <div class="infoItem">
+                        <i class="fas fa-headset"></i>
+                        <h2>1500+</h2>
+                        <p>Lorem Ipsum</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Total info -->
+    
+    <!-- Feature -->
+    <section class="featureMain">
+        <div class="container">
+            <h2>Our Features</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="featureItem">
+                        <i class="material-icons-outlined">how_to_reg</i>
+                        <h3>Talk to Real People</h3>
+                        <p>We monitoring all the users profile so that real people can connect with each others</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="featureItem">
+
+                        <i class="material-icons">verified</i>
+                        <h3>Verify Badge</h3>
+                        <p>We have a verify batch which will get after verify from us. So that everyone can recognize verified user</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="featureItem">
+                        <i class="fas fa-user-lock featureFont"></i>
+                        <h3>Your data are safe</h3>
+                        <p>Your data are secure on high secure server and will never misuse. Your profile are safe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Feature -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="footerNavMain">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="footerLogoSection">
+                            <h2>Logo here</h2>
+                            <p>No.1 Matchmaking Service in Bangladesh, was founded with a simple objective - to help people find happiness.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-2 offset-md-2 mb-4 mb-md-0">
+                        <div class="footerMenuSection">
+                            <h2>Need Help?</h2>
+                            <a href="#"><i class="fas fa-chevron-right"></i> Contact Us</a>
+                            <a href="#"><i class="fas fa-chevron-right"></i> FAQ</a>
+                            <a href="#"><i class="fas fa-chevron-right"></i> Report</a>
+                            <a href="#"><i class="fas fa-chevron-right"></i> News</a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mb-4 mb-md-0">
+                        <div class="footerMenuSection">
+                            <h2>More About</h2>
+                            <a href="#"><i class="fas fa-chevron-right"></i> About Us</a>
+                            <a href="#"><i class="fas fa-chevron-right"></i> Privacy Policy</a>
+                            <a href="#"><i class="fas fa-chevron-right"></i> Terms of use</a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mb-4 mb-md-0">
+                        <div class="footerMenuSection">
+                            <h2>Stay with us</h2>
+                            <a href="#"><i class="fas fa-chevron-right"></i> <span><i class="fab fa-facebook-f"></i></span> Facebook</a>
+                            <a href="#"><i class="fas fa-chevron-right"></i> <span><i class="fab fa-instagram"></i></span> Instagram</a>
+                            <a href="#"><i class="fas fa-chevron-right"></i> <span><i class="fab fa-twitter"></i></span> Twitter</a>
+                            <a href="#"><i class="fas fa-chevron-right"></i> <span><i class="fab fa-youtube"></i></span> Youtube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyRightSection">
+            <p><i class="far fa-copyright"></i> All right reserves by xyz</p>
+        </div>
+        
+    </footer>
+    <!-- /Footer -->
+
+
+    <!-- Javascript script here  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+    <script>
+        var myCarousel = document.querySelector('#headerImgCarousel')
+        var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 2000,
+        wrap: true
+        })
+    </script>
+</body>
+</html>
